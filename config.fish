@@ -1,5 +1,7 @@
 status --is-interactive; and source (rbenv init -|psub)
 
+alias c='clear'
+
 function update
   sudo gem update
   yarn global upgrade --latest
