@@ -1,0 +1,1 @@
+/Users/skawashima/.config/fisherman/bd/completions/bd.fish

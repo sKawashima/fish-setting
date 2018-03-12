@@ -1,0 +1,1 @@
+/Users/skawashima/.config/fisherman/gitignore/gitignore.fish
