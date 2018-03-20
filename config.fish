@@ -1,6 +1,7 @@
 status --is-interactive; and source (rbenv init -|psub)
 
 alias c='clear'
+alias a.='atom .'
 
 function update
   sudo gem update
