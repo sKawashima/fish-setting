@@ -1,15 +1,17 @@
 status --is-interactive; and source (rbenv init -|psub)
+# set -x PATH $HOME/.pyenv/bin $PATH
 
 alias c='clear'
+alias o.='open .'
 alias a.='atom .'
 alias a..='atom . & nrd'
 
 function update
   sudo gem update
+  sudo npm i -g npm
   yarn global upgrade --latest
-  npm -g update
   brew update
-  apm update
+  apm update -c false
 end
 
 # node
