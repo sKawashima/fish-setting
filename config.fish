@@ -14,6 +14,11 @@ function update
   apm update -c false
 end
 
+function gcom
+  git checkout master
+  git pull
+end
+
 # node
 alias nrd='npm run dev'
 alias nrg='npm run generate'
