@@ -15,6 +15,7 @@ function update
 end
 
 function gcom
+  git fetch --all
   git checkout master
   git pull
 end
