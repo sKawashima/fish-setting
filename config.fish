@@ -5,6 +5,7 @@ alias c='clear'
 alias o.='open .'
 alias a.='atom .'
 alias a..='atom . & nrd'
+alias qr='qrcode-terminal'
 
 function update
   sudo gem update
