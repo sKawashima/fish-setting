@@ -21,6 +21,12 @@ function gcom
   git pull
 end
 
+alias gac="ga .; gcm $argv"
+alias gpo="git push; hub browse"
+
+# merge済みリモートブランチの削除
+alias gbrd="git branch -r --merged master | grep -v -e master -e develop | sed -e 's% *origin/%%' | xargs -I \% git push --delete origin --force \%"
+
 # node
 alias nrd='npm run dev'
 alias nrg='npm run generate'
