@@ -20,13 +20,12 @@ function gcom
   git checkout master
   git pull
   git branch --merged master | grep -vE '^\*|master$|develop$' | xargs -I \% git branch -d \%
-  git fetch -p
 end
 
 alias gac="ga .; gcm $argv"
 alias gpo="git push -u; hub browse"
 
-alias gpro='gpr; hub browse'
+# alias gpro="gpr $argv; hub browse"
 
 # merge済みリモートブランチの削除
 alias gbrd="git branch -r --merged master | grep -v -e master -e develop | sed -e 's% *origin/%%' | xargs -I \% git push --delete origin --force \%"
