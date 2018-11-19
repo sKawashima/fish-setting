@@ -25,6 +25,8 @@ end
 alias gac="ga .; gcm $argv"
 alias gpo="git push; hub browse"
 
+alias gpro='gpr; hub browse'
+
 # merge済みリモートブランチの削除
 alias gbrd="git branch -r --merged master | grep -v -e master -e develop | sed -e 's% *origin/%%' | xargs -I \% git push --delete origin --force \%"
 
