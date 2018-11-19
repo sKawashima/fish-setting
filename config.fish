@@ -23,7 +23,7 @@ function gcom
 end
 
 alias gac="ga .; gcm $argv"
-alias gpo="git push; hub browse"
+alias gpo="git push -u; hub browse"
 
 alias gpro='gpr; hub browse'
 
@@ -48,7 +48,7 @@ alias gbd="git branch -D"
 alias gst="git status -sb --ignore-submodules"
 alias gm="git merge --no-ff"
 alias gpt="git push --tags"
-alias gp="git push"
+alias gp="git push -u"
 alias grs="git reset --soft"
 alias grh="git reset --hard"
 alias gb="git branch"
