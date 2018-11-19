@@ -19,6 +19,7 @@ function gcom
   git fetch --all
   git checkout master
   git pull
+  git branch --merged master | grep -vE '^\*|master$|develop$' | xargs -I \% git branch -d \%
 end
 
 alias gac="ga .; gcm $argv"
