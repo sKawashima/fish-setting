@@ -16,11 +16,12 @@ function update
 end
 
 function gcom
-  git fetch --all
   git checkout master
   git pull
   git branch --merged master | grep -vE '^\*|master$|develop$' | xargs -I \% git branch -d \%
   git fetch -p
+  gbrd
+  git fetch --all
 end
 
 alias gac="ga .; gcm $argv"
