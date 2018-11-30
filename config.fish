@@ -25,7 +25,7 @@ function gcom
 end
 
 alias gac="ga .; gcm $argv"
-alias gpo="git push -u; hub browse"
+alias gpo="git push -u; git open"
 
 # alias gpro="gpr $argv; hub browse"
 
