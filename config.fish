@@ -13,6 +13,7 @@ function update
   yarn global upgrade --latest
   brew update
   apm update -c false
+  brew upgrade
 end
 
 function gcom
