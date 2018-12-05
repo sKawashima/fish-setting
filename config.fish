@@ -37,6 +37,11 @@ alias gbrd="git branch -r --merged master | grep -v -e master -e develop | sed -
 alias nrd='npm run dev'
 alias nrg='npm run generate'
 
+# yarn
+alias yd='yarn dev'
+alias ys='yarn start'
+alias yb='yarn build'
+
 # shell
 alias la="ls -Gla"
 
