@@ -28,6 +28,11 @@ end
 alias gac="ga .; gcm $argv"
 alias gpo="git push -u; git open"
 
+function gacpo
+  gac $argv
+  gpo
+end
+
 # alias gpro="gpr $argv; hub browse"
 
 # merge済みリモートブランチの削除
