@@ -33,6 +33,9 @@ function gacpo
   gpo
 end
 
+function todocode -d "todo from source code"
+  grep -e "TODO" -n $argv
+end
 # alias gpro="gpr $argv; hub browse"
 
 # merge済みリモートブランチの削除
