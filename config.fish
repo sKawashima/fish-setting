@@ -30,6 +30,11 @@ alias gpo="git push -u; git open"
 
 function gacpo
   gac $argv
+  gp
+end
+
+function gacpo
+  gac $argv
   gpo
 end
 
