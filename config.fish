@@ -28,7 +28,7 @@ end
 alias gac="ga .; gcm $argv"
 alias gpo="git push -u; git open"
 
-function gacpo
+function gacp
   gac $argv
   gp
 end
