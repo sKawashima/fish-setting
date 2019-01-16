@@ -39,6 +39,7 @@ function gacpo
 end
 
 function todocode -d "todo from source code"
+  grep -e "TODO" -n $argv | grep -c ''
   grep -e "TODO" -n $argv
 end
 # alias gpro="gpr $argv; hub browse"
