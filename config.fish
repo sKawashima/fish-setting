@@ -19,7 +19,7 @@ end
 function gcom
   git checkout master
   git pull
-  git branch --merged master | grep -vE '^\*|master$|develop$' | xargs -I \% git branch -d \%
+  git branch --merged | grep -v '*' | xargs -I % git branch -d %
   git fetch -p
   gbrd
   git fetch --all
@@ -46,6 +46,9 @@ end
 
 # merge済みリモートブランチの削除
 alias gbrd="git branch -r --merged master | grep -v -e master -e develop | sed -e 's% *origin/%%' | xargs -I \% git push --delete origin --force \%"
+
+# master以外のブランチの削除
+alias gbdm="git branch | grep -v 'master' | grep -v '*' | xargs git branch -D"
 
 # node
 alias nrd='npm run dev'
