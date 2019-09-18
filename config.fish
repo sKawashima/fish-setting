@@ -25,7 +25,15 @@ function gcom
   git fetch --all
 end
 
-alias gac="ga .; gcm $argv"
+function gac
+  echo $argv
+  if test -n $argv
+    ga .; git commit
+  else
+    ga .; gcm $argv
+  end
+end
+
 alias gpo="git push -u; git open"
 
 function gacp
@@ -43,6 +51,11 @@ function todocode -d "todo from source code"
   grep -e "TODO" -n $argv
 end
 # alias gpro="gpr $argv; hub browse"
+
+function gcob
+  git checkout -b $argv
+  git push --set-upstream origin $argv
+end
 
 # merge済みリモートブランチの削除
 alias gbrd="git branch -r --merged master | grep -v -e master -e develop | sed -e 's% *origin/%%' | xargs -I \% git push --delete origin --force \%"
@@ -77,10 +90,11 @@ alias gp="git push -u"
 alias grs="git reset --soft"
 alias grh="git reset --hard"
 alias gb="git branch"
-alias gcob="git checkout -b"
 alias gco="git checkout"
 alias gba="git branch -a"
 alias gcp="git cherry-pick"
 alias gl="git lg"
 alias gpom="git pull origin master"
 alias gsa="git status"
+
+alias c.="code ."
