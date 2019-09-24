@@ -27,7 +27,7 @@ end
 
 function gac
   echo $argv
-  if test -n $argv
+  if test -z $argv
     ga .; gitmoji -c
   else
     ga .; gcm $argv
