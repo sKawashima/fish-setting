@@ -46,6 +46,16 @@ function gacpo
   gpo
 end
 
+function gcep
+  gce $argv
+  gp
+end
+
+function gcepo
+  gce $argv
+  gpo
+end
+
 function todocode -d "todo from source code"
   grep -e "TODO" -n $argv | grep -c ''
   grep -e "TODO" -n $argv
