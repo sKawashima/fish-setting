@@ -1,5 +1,5 @@
 status --is-interactive; and source (rbenv init -|psub)
-# set -x PATH $HOME/.pyenv/bin $PATH
+set -x PATH $HOME/Library/Python/3.7/bin $PATH
 
 alias c='clear'
 alias o.='open .'
@@ -74,6 +74,8 @@ alias gbrd="git branch -r --merged master | grep -v -e master -e develop | sed -
 alias gbdm="git branch | grep -v 'master' | grep -v '*' | xargs git branch -D"
 
 # node
+alias ni="npm i"
+alias nid="npm i;npm run dev"
 alias nrd='npm run dev'
 alias nrg='npm run generate'
 
@@ -82,7 +84,7 @@ alias yd='yarn dev'
 alias ys='yarn start'
 alias yb='yarn build'
 
-# shell
+# shell 
 alias la="ls -Gla"
 
 # git related shortcut
