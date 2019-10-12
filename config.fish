@@ -82,13 +82,16 @@ alias ni="npm i"
 alias nid="npm i;npm run dev"
 alias nrd='npm run dev'
 alias nrg='npm run generate'
+alias nd='npm run dev'
+alias ns='npm start'
+alias nb='npm run build'
 
 # yarn
 alias yd='yarn dev'
 alias ys='yarn start'
 alias yb='yarn build'
 
-# shell 
+# shell
 alias la="ls -Gla"
 
 # git related shortcut
