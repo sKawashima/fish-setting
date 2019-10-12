@@ -1,6 +1,10 @@
 status --is-interactive; and source (rbenv init -|psub)
 set -x PATH $HOME/Library/Python/3.7/bin $PATH
 
+set -x PYENV_ROOT $HOME/.pyenv
+set -x PATH $PYENV_ROOT/bin:$PATH
+eval (pyenv init - | source)
+
 alias c='clear'
 alias o.='open .'
 alias a.='atom .'
