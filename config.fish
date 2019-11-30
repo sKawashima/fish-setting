@@ -16,7 +16,6 @@ function update
   sudo npm i -g npm
   yarn global upgrade --latest
   brew update
-  apm update -c false
   brew upgrade
 end
 
@@ -117,3 +116,5 @@ alias gpom="git pull origin master"
 alias gsa="git status"
 
 alias c.="code ."
+set -g fish_user_paths "/usr/local/opt/ncurses/bin" $fish_user_paths
+set -g fish_user_paths "/usr/local/opt/ncurses/bin" $fish_user_paths
