@@ -10,6 +10,7 @@ alias o.='open .'
 alias a.='atom .'
 alias a..='atom . & nrd'
 alias qr='qrcode-terminal'
+alias typora="open -a typora"
 
 function update
   sudo gem update
