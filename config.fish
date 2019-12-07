@@ -5,6 +5,7 @@ set -x PYENV_ROOT $HOME/.pyenv
 set -x PATH $PYENV_ROOT/bin:$PATH
 
 set -x GOPATH $HOME/go
+set -x PATH $HOME/go:$PATH
 
 set -x EDITOR micro
 eval (pyenv init - | source)
