@@ -7,6 +7,8 @@ set -x PATH $PYENV_ROOT/bin:$PATH
 set -x GOPATH $HOME/go
 set -x PATH $HOME/go:$PATH
 
+set -x PATH $HOME/flutter/bin:$PATH
+
 set -x EDITOR micro
 eval (pyenv init - | source)
 
@@ -122,5 +124,4 @@ alias gpom="git pull origin master"
 alias gsa="git status"
 
 alias c.="code ."
-set -g fish_user_paths "/usr/local/opt/ncurses/bin" $fish_user_paths
 set -g fish_user_paths "/usr/local/opt/ncurses/bin" $fish_user_paths
