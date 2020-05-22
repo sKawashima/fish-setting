@@ -1,16 +1,16 @@
-status --is-interactive; and source (rbenv init -|psub)
-set -x PATH $HOME/Library/Python/3.7/bin $PATH
+# status --is-interactive; and source (rbenv init -|psub)
+# set -x PATH $HOME/Library/Python/3.7/bin $PATH
 
-set -x PYENV_ROOT $HOME/.pyenv
-set -x PATH $PYENV_ROOT/bin:$PATH
+# set -x PYENV_ROOT $HOME/.pyenv
+# set -x PATH $PYENV_ROOT/bin:$PATH
 
-set -x GOPATH $HOME/go
-set -x PATH $HOME/go:$PATH
+# set -x GOPATH $HOME/go
+# set -x PATH $HOME/go:$PATH
 
-set -x PATH $HOME/flutter/bin:$PATH
+# set -x PATH $HOME/flutter/bin:$PATH
 
 set -x EDITOR micro
-eval (pyenv init - | source)
+# eval (pyenv init - | source)
 
 alias c='clear'
 alias o.='open .'
@@ -122,3 +122,5 @@ alias gsa="git status"
 
 alias c.="code ."
 set -g fish_user_paths "/usr/local/opt/ncurses/bin" $fish_user_paths
+
+alias d-c="docker-compose"
