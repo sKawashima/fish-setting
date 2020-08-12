@@ -1,1 +1,1 @@
-/Users/skawashima/.config/fisherman/bobthefish/fish_prompt.fish
+/Users/skawashima/.local/share/omf/themes/bobthefish/fish_prompt.fish

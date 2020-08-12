@@ -4,8 +4,11 @@
 # set -x PYENV_ROOT $HOME/.pyenv
 # set -x PATH $PYENV_ROOT/bin:$PATH
 
-# set -x GOPATH $HOME/go
-# set -x PATH $HOME/go:$PATH
+set -x DENO_INSTALL $HOME/.deno
+set -x PATH $DENO_INSTALL/bin:$PATH
+
+set -x GOPATH $HOME/go
+set -x PATH $PATH $GOPATH/bin
 
 # set -x PATH $HOME/flutter/bin:$PATH
 
