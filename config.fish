@@ -127,3 +127,12 @@ alias c.="code ."
 set -g fish_user_paths "/usr/local/opt/ncurses/bin" $fish_user_paths
 
 alias d-c="docker-compose"
+
+set -x NODENV_ROOT $HOME/.anyenv/envs/nodenv
+set -x PATH $HOME/.anyenv/envs/nodenv/bin $PATH
+set -gx PATH $NODENV_ROOT/shims $PATH
+
+alias fuckXcode="time sudo rm -rf (xcode-select -print-path);xcode-select --install"
+
+alias upyabai="brew services start skhd;brew services start yabai"
+alias downyabai="brew services stop skhd;brew services stop yabai"
